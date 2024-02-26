@@ -12,7 +12,7 @@ import {
 
 import Card from './src/components/Card';
 import IconBlock from './src/components/IconBlock';
-import { faBolt, faCoffee } from "@fortawesome/free-solid-svg-icons";
+import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -50,12 +50,12 @@ function App(): React.JSX.Element {
       {/* Icon Block */}
       <View className="mt-5 px-4">
         <IconBlock 
-          icon={faCoffee}
+          icon={solidIcons.faCoffee}
           title="Example Icon Block"
           description="This is an example Icon Block component."
         />
         <IconBlock 
-          icon={faBolt}
+          icon={solidIcons.faBolt}
           title="Example Icon Block"
           description="This is an example Icon Block component."
         />
