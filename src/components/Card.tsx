@@ -13,7 +13,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, titleColor = 'text-black', descriptionColor = 'text-black', backgroundColor = 'bg-gray-200' }) => {
   return (
-    <View className={`${backgroundColor} rounded-md w-64 p-5 mr-5`}>
+    <View className={`${backgroundColor} rounded-md p-5`}>
       <Text className={`${titleColor} text-lg font-bold mb-1`}>{title}</Text>
       <Text className={`${descriptionColor}`}>{description}</Text>
     </View>

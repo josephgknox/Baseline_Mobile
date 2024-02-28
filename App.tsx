@@ -33,8 +33,17 @@ function App(): React.JSX.Element {
             <Text className='text-white text-lg font-bold'>Joe's App</Text>
           </View>
 
+          {/* Card */}
+          <View className=' mt-5 px-4'>
+            <Card
+              title="Card Title"
+              description="This is a Description of a Card component."
+            />
+          </View>
+
           {/* Horizontal Scroll of Cards */}
           <ScrollView horizontal={true} className='mt-5 px-4'>
+            <View className="w-64 mr-5">
             <Card
               title="Card Title"
               description="This is a Description of a Card component."
@@ -42,14 +51,19 @@ function App(): React.JSX.Element {
               descriptionColor="text-white"
               backgroundColor="bg-indigo-900"
             />
+            </View>
+            <View className="w-64 mr-5">
             <Card
               title="Card Title"
               description="This is a Description of a Card component."
             />
+            </View>
+            <View className="w-64 mr-5">
             <Card
               title="Card Title"
               description="This is a Description of a Card component."
             />
+            </View>
           </ScrollView>
 
           {/* Icon Block */}
@@ -67,7 +81,7 @@ function App(): React.JSX.Element {
           </View>
 
           {/* Content Block */}
-          <View className='px-4'>
+          <View className='mb-5 px-4'>
             <ContentBlock
               subtitle="Subtitle"
               title="Content Block Title"
