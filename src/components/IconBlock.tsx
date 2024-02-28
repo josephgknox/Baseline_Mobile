@@ -9,13 +9,14 @@ interface IconBlockProps {
   icon: IconProp;
   title: string;
   description: string;
+  borderColor?: string;
   iconSize?: number;
   iconColor?: string;
 }
 
-const IconBlock: React.FC<IconBlockProps> = ({ icon, title, description, iconSize = 50, iconColor = 'indigo' }) => {
+const IconBlock: React.FC<IconBlockProps> = ({ icon, title, description, borderColor = 'border-gray-200', iconSize = 50, iconColor = 'indigo' }) => {
   return (
-    <View className='border-solid border-4 border-indigo-900 rounded-md p-5 mb-5 flex flex-col items-center justify-center'>
+    <View className={`border-solid border-2 ${borderColor} rounded-md p-5 mb-5 flex flex-col items-center justify-center`}>
       <FontAwesomeIcon icon={icon} size={iconSize} color={iconColor}/>
       <Text className='text-black text-lg font-bold mb-1'>{title}</Text>
       <Text className='text-black'>{description}</Text>

@@ -36,42 +36,43 @@ function App(): React.JSX.Element {
           {/* Horizontal Scroll of Cards */}
           <ScrollView horizontal={true} className='mt-5 px-4'>
             <Card
-              title="Example Card"
-              description="This is an example Card component."
+              title="Card Title"
+              description="This is a Description of a Card component."
               titleColor="text-white"
               descriptionColor="text-white"
               backgroundColor="bg-indigo-900"
             />
             <Card
-              title="Example Card"
-              description="This is an example Card component."
+              title="Card Title"
+              description="This is a Description of a Card component."
             />
             <Card
-              title="Example Card"
-              description="This is an example Card component."
+              title="Card Title"
+              description="This is a Description of a Card component."
             />
           </ScrollView>
-          
+
           {/* Icon Block */}
           <View className='my-5 last:-mb-0 px-4'>
             <IconBlock
               icon={solidIcons.faCoffee}
-              title="Example Icon Block"
-              description="This is an example Icon Block component."
+              title="Icon Block Title"
+              description="This is the Description of an Icon Block."
             />
             <IconBlock
               icon={solidIcons.faBolt}
-              title="Example Icon Block"
-              description="This is an example Icon Block component."
+              title="Icon Block Title"
+              description="This is the Description of an Icon Block."
             />
           </View>
-          
+
           {/* Content Block */}
           <View className='px-4'>
             <ContentBlock
               subtitle="Subtitle"
-              title="Title"
-              body="This is an example Content Block component"
+              title="Content Block Title"
+              body="This is the Body of a Content Block where body content will be displayed."
+              backgroundColor="bg-gray-200"
             />
           </View>
 
