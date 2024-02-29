@@ -1,4 +1,4 @@
-// IconBlock.tsx
+// Icon Block Component
 
 import React from 'react';
 import { View, Text } from 'react-native';

@@ -1,99 +1,33 @@
-import "./src/styles/global.css";
+import * as React from 'react';
 
-import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
 import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
+  Home,
+  Components,
+} from './src/screens/Screens';
 
-import Card from './src/components/Card';
-import ContentBlock from './src/components/ContentBlock';
-import IconBlock from './src/components/IconBlock';
-import * as solidIcons from "@fortawesome/free-solid-svg-icons";
+type RootStackParamList = {
+  Home: undefined;
+  Components: undefined;
+};
 
-function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  const backgroundStyle = 'bg-neutral-300 dark:bg-slate-900';
+const Stack = createNativeStackNavigator<RootStackParamList>();
 
+const App: React.FC = () => {
   return (
-    <SafeAreaView className={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior='automatic'
-        className={backgroundStyle}>
-        <View className='flex-1 bg-white'>
-          {/* Header */}
-          <View className='p-4 bg-black'>
-            <Text className='text-white text-lg font-bold'>Joe's App</Text>
-          </View>
-
-          {/* Card */}
-          <View className=' mt-5 px-4'>
-            <Card
-              title="Card Title"
-              description="This is a Description of a Card component."
-            />
-          </View>
-
-          {/* Horizontal Scroll of Cards */}
-          <ScrollView horizontal={true} className='mt-5 px-4'>
-            <View className="w-64 mr-5">
-            <Card
-              title="Card Title"
-              description="This is a Description of a Card component."
-              titleColor="text-white"
-              descriptionColor="text-white"
-              backgroundColor="bg-indigo-900"
-            />
-            </View>
-            <View className="w-64 mr-5">
-            <Card
-              title="Card Title"
-              description="This is a Description of a Card component."
-            />
-            </View>
-            <View className="w-64 mr-5">
-            <Card
-              title="Card Title"
-              description="This is a Description of a Card component."
-            />
-            </View>
-          </ScrollView>
-
-          {/* Icon Block */}
-          <View className='my-5 last:-mb-0 px-4'>
-            <IconBlock
-              icon={solidIcons.faCoffee}
-              title="Icon Block Title"
-              description="This is the Description of an Icon Block."
-            />
-            <IconBlock
-              icon={solidIcons.faBolt}
-              title="Icon Block Title"
-              description="This is the Description of an Icon Block."
-            />
-          </View>
-
-          {/* Content Block */}
-          <View className='mb-5 px-4'>
-            <ContentBlock
-              subtitle="Subtitle"
-              title="Content Block Title"
-              body="This is the Body of a Content Block where body content will be displayed."
-              backgroundColor="bg-gray-200"
-            />
-          </View>
-
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{ title: 'Baseline Mobile' }}
+        />
+        <Stack.Screen name="Components" component={Components} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
 
 export default App;
