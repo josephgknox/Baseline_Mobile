@@ -5,9 +5,8 @@ import {
   SafeAreaView,
   ScrollView,
   StatusBar,
-  Text,
   useColorScheme,
-  View,
+  View
 } from 'react-native';
 
 import {
