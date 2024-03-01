@@ -3,7 +3,11 @@
 import "../styles/global.css";
 
 import React from 'react';
-import { Button } from 'react-native';
+import {
+  View,
+  Button,
+} from 'react-native';
+
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 type HomeProps = {
@@ -12,12 +16,14 @@ type HomeProps = {
 
 const Home: React.FC<HomeProps> = ({ navigation }) => {
   return (
-    <Button
-      title="Components"
-      onPress={() =>
-        navigation.navigate('Components')
-      }
-    />
+    <View className='flex-1 bg-white'>
+      <Button
+        title="Components"
+        onPress={() =>
+          navigation.navigate('Components')
+        }
+      />
+    </View>
   );
 };
 

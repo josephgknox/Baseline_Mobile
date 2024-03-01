@@ -1,6 +1,5 @@
 // Components Screen
 
-import "../styles/global.css";
 import React from 'react';
 import {
   SafeAreaView,
@@ -10,11 +9,13 @@ import {
   useColorScheme,
   View,
 } from 'react-native';
+
 import {
   Card,
   ContentBlock,
   IconBlock
 } from '../components/Components';
+
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 
 function App(): React.JSX.Element {
@@ -30,11 +31,6 @@ function App(): React.JSX.Element {
           contentInsetAdjustmentBehavior='automatic'
           className={backgroundStyle}>
           <View className='flex-1 bg-white'>
-
-            {/* Header */}
-            <View className='p-4 bg-black'>
-              <Text className='text-white text-lg font-bold'>Joe's App</Text>
-            </View>
 
             {/* Card */}
             <View className=' mt-5 px-4'>

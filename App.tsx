@@ -17,6 +17,7 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const App: React.FC = () => {
   return (
+
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen
@@ -24,7 +25,11 @@ const App: React.FC = () => {
           component={Home}
           options={{ title: 'Baseline Mobile' }}
         />
-        <Stack.Screen name="Components" component={Components} />
+        <Stack.Screen
+          name="Components"
+          component={Components}
+          options={{ title: 'Components' }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
