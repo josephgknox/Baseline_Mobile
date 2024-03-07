@@ -32,7 +32,7 @@ function App(): React.JSX.Element {
           <View className='flex-1 bg-white'>
 
             {/* Card */}
-            <View className=' mt-5 px-4'>
+            <View className='mt-5 px-4'>
               <Card
                 title="Card Title"
                 description="This is a Description of a Card component."

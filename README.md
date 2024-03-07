@@ -1,4 +1,8 @@
+# Welcome to Baseline Mobile
+
 This project is intended to explore and substantiate the viability of building Baseline Mobile.
+
+Baseline Mobile is a design and development system for the Golden State Warriors and its affiliates. This library includes a browsable collection of design patterns that can be used in any Golden State Warriors project.
 
 # Getting Started
 
