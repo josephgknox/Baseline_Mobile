@@ -29,14 +29,14 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
   return (
     <SafeAreaView>
       <ScrollView>
-        <View className='flex-1 bg-white'>
+        <View className='flex-1 bg-white px-4'>
 
-          <View className='mt-5 px-4'>
+          <View className='mt-5'>
             <Text className='text-lg font-bold mb-1'>Welcome to the Baseline Mobile Pattern Library</Text>
             <Text>Baseline Mobile is a design and development system for the Golden State Warriors and its affiliates. This library includes a browsable collection of design patterns that can be used in any Golden State Warriors project.</Text>
           </View>
 
-          <View className='mt-5 px-4'>
+          <View className='mt-5'>
             <TouchableOpacity
               className='bg-black p-5 rounded-md'
               accessibilityLabel="Learn more about available Baseline Mobile components"

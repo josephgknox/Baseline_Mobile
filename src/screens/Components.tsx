@@ -29,10 +29,10 @@ function App(): React.JSX.Element {
         <ScrollView
           contentInsetAdjustmentBehavior='automatic'
           className={backgroundStyle}>
-          <View className='flex-1 bg-white'>
+          <View className='flex-1 bg-white px-4'>
 
             {/* Card */}
-            <View className='mt-5 px-4'>
+            <View className='mt-5'>
               <Card
                 title="Card Title"
                 description="This is a Description of a Card component."
@@ -40,7 +40,7 @@ function App(): React.JSX.Element {
             </View>
 
             {/* Horizontal Scroll of Cards */}
-            <ScrollView horizontal={true} className='mt-5 px-4'>
+            <ScrollView horizontal={true} className='mt-5'>
               <View className="w-64 mr-5">
                 <Card
                   title="Card Title"
@@ -65,7 +65,7 @@ function App(): React.JSX.Element {
             </ScrollView>
 
             {/* Icon Block */}
-            <View className='my-5 last:-mb-0 px-4'>
+            <View className='my-5 last:-mb-0'>
               <IconBlock
                 icon={solidIcons.faCoffee}
                 title="Icon Block Title"
@@ -79,7 +79,7 @@ function App(): React.JSX.Element {
             </View>
 
             {/* Content Block */}
-            <View className='mb-5 px-4'>
+            <View className='mb-5'>
               <ContentBlock
                 subtitle="Subtitle"
                 title="Content Block Title"
