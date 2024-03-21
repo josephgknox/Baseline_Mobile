@@ -6,12 +6,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import {
+  Auth,
   Home,
   Components,
 } from './src/screens/Screens';
 
 type RootStackParamList = {
   Home: undefined;
+  Auth: undefined;
   Components: undefined;
 };
 
@@ -26,6 +28,11 @@ const App: React.FC = () => {
           name="Home"
           component={Home}
           options={{ title: 'Baseline Mobile' }}
+        />
+        <Stack.Screen
+          name="Auth"
+          component={Auth}
+          options={{ headerShown: false }}
         />
         <Stack.Screen
           name="Components"

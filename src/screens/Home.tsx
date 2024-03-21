@@ -43,6 +43,12 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
               onPress={() => navigation.navigate('Components')}>
               <Text className='text-white text-lg font-bold text-center'>Components</Text>
             </TouchableOpacity>
+            <TouchableOpacity
+              className='bg-black p-5 mt-3 rounded-md'
+              accessibilityLabel="Learn more about Baseline Mobile authentication"
+              onPress={() => navigation.navigate('Auth')}>
+              <Text className='text-white text-lg font-bold text-center'>Authentication</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </ScrollView>
