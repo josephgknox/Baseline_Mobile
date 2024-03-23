@@ -7,11 +7,13 @@ import {
   TouchableOpacity,
   SafeAreaView,
   ScrollView,
-  Linking
+  Linking,
+  Button
 } from 'react-native';
 
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { cssInterop } from 'nativewind';
+import { firebase_auth } from '../config/firebase';
 
 type HomeProps = {
   navigation: NativeStackNavigationProp<any>;
@@ -55,6 +57,10 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
               onPress={() => handleExternalLink('https://github.com/josephgknox/Baseline_Mobile/')}>
               <Text className='text-white text-lg font-bold text-center'>Source Code</Text>
             </TouchableOpacity>
+            <Button
+              onPress={() => firebase_auth.signOut()}
+              title='Logout'
+            />
           </View>
         </View>
       </ScrollView>
