@@ -6,7 +6,8 @@ import {
   Text,
   TouchableOpacity,
   SafeAreaView,
-  ScrollView
+  ScrollView,
+  Linking
 } from 'react-native';
 
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
@@ -25,6 +26,11 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
       },
     },
   });
+
+  // For opening/handling external links
+  const handleExternalLink = async (url: string) => {
+    await Linking.openURL(url);
+  };
 
   return (
     <SafeAreaView>
@@ -45,9 +51,9 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
             </TouchableOpacity>
             <TouchableOpacity
               className='bg-black p-5 mt-3 rounded-md'
-              accessibilityLabel="Learn more about Baseline Mobile authentication"
-              onPress={() => navigation.navigate('Auth')}>
-              <Text className='text-white text-lg font-bold text-center'>Authentication</Text>
+              accessibilityLabel="Source code for Baseline Mobile"
+              onPress={() => handleExternalLink('https://github.com/josephgknox/Baseline_Mobile/')}>
+              <Text className='text-white text-lg font-bold text-center'>Source Code</Text>
             </TouchableOpacity>
           </View>
         </View>

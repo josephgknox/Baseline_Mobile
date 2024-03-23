@@ -24,7 +24,7 @@ const Auth = () => {
     try {
       const response = await signInWithEmailAndPassword(auth, email, password);
       console.log(response);
-      Alert.alert('Check your email!');
+      Alert.alert('Welcome back!');
     } catch (error: any) {
       console.log(error);
       Alert.alert('Log in attempt failed.: ' + error.message);
