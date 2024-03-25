@@ -19,7 +19,7 @@ interface ContentBlockProps {
   backgroundColor?: string;
 }
 
-const ContentBlock: React.FC<ContentBlockProps> = ({ title, subtitle, body, subtitleAlignment = 'text-center', titleAlignment = 'text-center', bodyAlignment = 'text-left', subtitleColor = 'text-indigo-900', titleColor = 'text-black', bodyColor = 'text-black', backgroundColor = 'bg-transparent' }) => {
+const ContentBlock = ({ title, subtitle, body, subtitleAlignment = 'text-center', titleAlignment = 'text-center', bodyAlignment = 'text-left', subtitleColor = 'text-indigo-900', titleColor = 'text-black', bodyColor = 'text-black', backgroundColor = 'bg-transparent' }: ContentBlockProps) => {
   return (
     <View className={`${backgroundColor} p-5`}>
       <Text className={`${subtitleAlignment} ${subtitleColor} font-bold`}>{subtitle}</Text>

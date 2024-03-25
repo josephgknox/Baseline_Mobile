@@ -14,7 +14,7 @@ interface CardProps {
   backgroundColor?: string;
 }
 
-const Card: React.FC<CardProps> = ({ title, description, titleColor = 'text-black', descriptionColor = 'text-black', backgroundColor = 'bg-gray-200' }) => {
+const Card = ({ title, description, titleColor = 'text-black', descriptionColor = 'text-black', backgroundColor = 'bg-gray-200' }: CardProps) => {
   return (
     <View className={`${backgroundColor} rounded-md p-5`}>
       <Text className={`${titleColor} text-lg font-bold mb-1`}>{title}</Text>

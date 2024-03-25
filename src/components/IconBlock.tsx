@@ -14,7 +14,7 @@ interface IconBlockProps {
   iconColor?: string;
 }
 
-const IconBlock: React.FC<IconBlockProps> = ({ icon, title, description, borderColor = 'border-gray-200', iconSize = 50, iconColor = 'indigo' }) => {
+const IconBlock = ({ icon, title, description, borderColor = 'border-gray-200', iconSize = 50, iconColor = 'indigo' }: IconBlockProps) => {
   return (
     <View className={`border-solid border-2 ${borderColor} rounded-md p-5 mb-5 flex flex-col items-center justify-center`}>
       <FontAwesomeIcon icon={icon} size={iconSize} color={iconColor}/>

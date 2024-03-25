@@ -19,7 +19,7 @@ type HomeProps = {
   navigation: NativeStackNavigationProp<any>;
 };
 
-const Home: React.FC<HomeProps> = ({ navigation }) => {
+const Home = ({ navigation }: HomeProps) => {
   // Map Tailwind classes to React Native components using NativeWind's cssInterop function
   cssInterop(TouchableOpacity, {
     className: {
