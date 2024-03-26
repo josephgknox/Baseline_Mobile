@@ -23,7 +23,7 @@ type RootStackParamList = {
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-const App: React.FC = () => {
+const App = () => {
   const [user, setUser] = useState<User | null>(null);
 
   useEffect(() => {

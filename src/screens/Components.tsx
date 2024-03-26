@@ -18,7 +18,7 @@ import {
 
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 
-function App(): React.JSX.Element {
+const Components = () => {
   const isDarkMode = useColorScheme() === 'dark';
   const backgroundStyle = 'bg-white dark:bg-black';
 
@@ -103,4 +103,4 @@ function App(): React.JSX.Element {
   );
 }
 
-export default App;
+export default Components;
