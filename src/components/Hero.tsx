@@ -1,12 +1,7 @@
 // Hero Component
 
 import React from 'react';
-import {
-  View,
-  Text,
-  ImageBackground,
-  ImageSourcePropType
-} from 'react-native';
+import { View, Text, ImageBackground, ImageSourcePropType } from 'react-native';
 
 interface HeroProps {
   imageSource: ImageSourcePropType;

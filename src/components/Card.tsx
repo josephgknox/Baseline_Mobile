@@ -1,10 +1,7 @@
 // Card Component
 
 import React from 'react';
-import {
-  View,
-  Text
-} from 'react-native';
+import { View, Text } from 'react-native';
 
 interface CardProps {
   title: string;

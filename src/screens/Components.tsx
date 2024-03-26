@@ -1,21 +1,8 @@
 // Components Screen
 
 import React from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  useColorScheme,
-  View
-} from 'react-native';
-
-import {
-  Card,
-  ContentBlock,
-  Hero,
-  IconBlock
-} from '../components/Components';
-
+import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
+import { Card, ContentBlock, Hero, IconBlock } from '../components/Components';
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 
 const Components = () => {

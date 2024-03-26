@@ -1,10 +1,7 @@
 // Content Block Component
 
 import React from 'react';
-import {
-  View,
-  Text
-} from 'react-native';
+import { View, Text } from 'react-native';
 
 interface ContentBlockProps {
   subtitle: string;
