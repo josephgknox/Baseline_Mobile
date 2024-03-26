@@ -54,7 +54,7 @@ const App = () => {
             <Stack.Screen
               name="Auth"
               component={Auth}
-              options={{ title: 'Log In / Sign Up', headerShown: true }}
+              options={{ title: 'Log In / Sign Up', headerShown: false }}
             />
           </React.Fragment>
         )}

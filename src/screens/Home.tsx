@@ -20,10 +20,10 @@ const Home = ({ navigation }: HomeProps) => {
   return (
     <SafeAreaView className="flex-1 relative">
       <ScrollView className="flex-1">
-        <View className="flex-1 bg-white px-4">
+        <View className="flex-1 px-4">
           <View className="mt-5">
             <Text className="text-3xl font-black mb-3">Welcome to the Baseline Mobile Pattern Library</Text>
-            <Text>Baseline Mobile is a design and development system for the Golden State Warriors and its affiliates. This library includes a browsable collection of design patterns that can be used in any Golden State Warriors project.</Text>
+            <Text className='text-gray-500 text-lg'>Baseline Mobile is a design and development system for the Golden State Warriors and its affiliates. This library includes a browsable collection of design patterns that can be used in any Golden State Warriors project.</Text>
           </View>
           <View className="mt-5">
             <TouchableOpacity

@@ -40,7 +40,7 @@ const Auth = () => {
   }
 
   return (
-    <View className='flex-1 justify-center bg-white px-4'>
+    <View className='flex-1 justify-center px-4'>
       <KeyboardAvoidingView behavior='padding'>
         <TextInput
           onFocus={() => { }}

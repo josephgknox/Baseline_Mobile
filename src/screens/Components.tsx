@@ -25,7 +25,7 @@ const Components = () => {
             subtitle="This is a Subtitle of a Hero component"
           />
         </View>
-        <View className='flex-1 bg-white px-4'>
+        <View className='flex-1 px-4'>
 
           {/* Card */}
           <View className='mt-5'>
