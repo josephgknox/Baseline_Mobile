@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { SafeAreaView, ScrollView, StatusBar, useColorScheme, View } from 'react-native';
-import { Card, ContentBlock, Hero, IconBlock } from '../components/Components';
+import { Card, ContentBlock, Hero, IconBlock, Testimonial } from '../components/Components';
 import * as solidIcons from "@fortawesome/free-solid-svg-icons";
 
 const Components = () => {
@@ -83,6 +83,15 @@ const Components = () => {
               title="Content Block Title"
               body="This is the Body of a Content Block where body content will be displayed."
               backgroundColor="bg-gray-200"
+            />
+          </View>
+
+          {/* Testimonial */}
+          <View className='mb-5'>
+            <Testimonial
+              imageSource={require('../assets/images/hero-img-placeholder.png')}
+              quote="This is the Quote of a Testimonial component where the content of the testimonial with be displayed."
+              byline="Testimonial Byline" 
             />
           </View>
 
