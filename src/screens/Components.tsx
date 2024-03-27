@@ -17,14 +17,16 @@ const Components = () => {
       <ScrollView
         contentInsetAdjustmentBehavior='automatic'
         className={backgroundStyle}>
-        {/* Hero */}
+
+        {/* Hero Image */}
         <View>
           <Hero
             imageSource={require('../assets/images/hero-img-placeholder.png')}
-            title="Hero Title"
+            title="Image Hero Title"
             subtitle="This is a Subtitle of a Hero component"
           />
         </View>
+
         <View className='flex-1 px-4'>
 
           {/* Card */}

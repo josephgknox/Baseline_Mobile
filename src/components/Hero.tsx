@@ -15,11 +15,11 @@ const Hero = ({ imageSource, title, subtitle, titleColor = 'text-white', subtitl
   return (
     <ImageBackground
       source={imageSource}
-      style={{ width: '100%', height: 300 }}
+      className='w-full h-[300px]'
     >
-      <View className="flex-1 justify-center items-center">
+      <View className='flex-1 justify-center items-center'>
         <Text className={`${titleColor} text-4xl font-bold`}>{title}</Text>
-        <Text className={`${subtitleColor} text-lg`}>{subtitle}</Text>
+        <Text className={`${subtitleColor} text-xl mt-2`}>{subtitle}</Text>
       </View>
     </ImageBackground>
   );
