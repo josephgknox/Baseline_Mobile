@@ -21,7 +21,7 @@ const Components = () => {
         {/* Hero Image */}
         <View>
           <Hero
-            imageSource={require('../assets/images/hero-img-placeholder.png')}
+            imageSource={require('../assets/images/hero-img.png')}
             title="Image Hero Title"
             subtitle="This is a Subtitle of a Hero component"
           />
@@ -89,7 +89,7 @@ const Components = () => {
           {/* Testimonial */}
           <View className='mb-5'>
             <Testimonial
-              imageSource={require('../assets/images/hero-img-placeholder.png')}
+              imageSource={require('../assets/images/person.png')}
               quote="This is the Quote of a Testimonial component where the content of the testimonial with be displayed."
               byline="Testimonial Byline" 
             />
